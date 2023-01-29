@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>GBC - Global Business Consultant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:wght@100;300;400;500;700|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="">GBC</span>
+      </a>
+    </div><!-- End Logo -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown pe-3">
+          <i class="bi bi-list toggle-sidebar-btn"></i>
+        </li><!-- End Profile Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-house-door"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="join.html">
+          <i class="bi bi-person-plus"></i>
+          <span>회원가입</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>로그인</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="myPage.html">
+          <i class="bi bi-person-badge"></i>
+          <span>마이페이지</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="memList.html">
+          <i class="bi bi-card-list"></i>
+          <span>회원리스트</span>
+        </a>
+      </li>
+    </ul>
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>회원리스트</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">회원리스트</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <!-- Center Table -->
+        <div class="col-12">
+          <div class="card top-selling overflow-auto">
+            <div class="card-body pb-0 px-0">
+              <table class="table table-borderless mb-0">
+                <colgroup>
+                  <col style="width:25%" />
+                  <col style="width: auto" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="ps-3">이름</th>
+                    <td><input type="text" class="form-control" /></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="ps-3">권한/등급</th>
+                    <td>
+                      <select class="form-select" aria-label="Default select example">
+                        <option value="1" selected="">정회원</option>
+                        <option value="2">플래티넘</option>
+                        <option value="3">골드</option>
+                        <option value="4">실버</option>
+                        <option value="5">브론즈</option>
+                        <option value="6">프렌즈</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="ps-3">기수</th>
+                    <td><input type="text" class="form-control" /></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="ps-3">전문분야</th>
+                    <td><input type="text" class="form-control" /></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="ps-3">키워드</th>
+                    <td><input type="text" class="form-control" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-center mb-5">
+            <button type="submit" class="btn btn-primary w-50">조회</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Center Table -->
+        <div class="col-12">
+          <div class="card top-selling overflow-auto mb-3">
+            <div class="card-body pb-0 px-0">
+              <table class="table table-striped mb-0">
+                <colgroup>
+                  <col style="width:2%" />
+                  <col style="width:5%" />
+                  <col style="width:10%" />
+                  <col style="width:10%" />
+                  <col style="width: auto" />
+                  <col style="width:10%" />
+                  <col style="width:10%" />
+                  <col style="width:10%" />
+                  <col style="width: auto" />
+                  <col style="width:10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">기수</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">회사명</th>
+                    <th scope="col">부서</th>
+                    <th scope="col">전문분야</th>
+                    <th scope="col">전화번호</th>
+                    <th scope="col">핸드폰</th>
+                    <th scope="col">이메일</th>
+                    <th scope="col">권한/등급</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1기</td>
+                    <td><a href="memDetail.html">이름</a></td>
+                    <td>회사명</td>
+                    <td>부서</td>
+                    <td>전문분야</td>
+                    <td>전화번호</td>
+                    <td>핸드폰</td>
+                    <td>이메일</td>
+                    <td>정회원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>1기</td>
+                    <td><a href="memDetail.html">이름이</a></td>
+                    <td>회사명회사명</td>
+                    <td>부서부서</td>
+                    <td>전문분야</td>
+                    <td>전화번호</td>
+                    <td>핸드폰</td>
+                    <td>이메일</td>
+                    <td>정회원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>1기</td>
+                    <td><a href="memDetail.html">이름이</a></td>
+                    <td>회사명회사명</td>
+                    <td>부서부서</td>
+                    <td>전문분야</td>
+                    <td>전화번호</td>
+                    <td>핸드폰</td>
+                    <td>이메일</td>
+                    <td>정회원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>1기</td>
+                    <td><a href="memDetail.html">이름이</a></td>
+                    <td>회사명회사명</td>
+                    <td>부서부서</td>
+                    <td>전문분야</td>
+                    <td>전화번호</td>
+                    <td>핸드폰</td>
+                    <td>이메일</td>
+                    <td>정회원</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>1기</td>
+                    <td><a href="memDetail.html">이름이</a></td>
+                    <td>회사명회사명</td>
+                    <td>부서부서</td>
+                    <td>전문분야</td>
+                    <td>전화번호</td>
+                    <td>핸드폰</td>
+                    <td>이메일</td>
+                    <td>정회원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>GBC</span></strong>. All Rights Reserved
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
